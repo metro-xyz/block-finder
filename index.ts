@@ -18,8 +18,7 @@ const run = async () => {
   const latestBlockTimestamp = latestBlock.timestamp; // bigInt
 
   console.log(latestBlockTimestamp);
-
-
 };
 
+// to run, use `npx ts-node index.ts`
 run().catch(console.error);
