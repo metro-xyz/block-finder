@@ -1,10 +1,21 @@
+# pip3 install web3
+# pip3 install python-dotenv
+
 # main.py
+import os
+from dotenv import load_dotenv
 from web3 import Web3
 
 # https://web3py.readthedocs.io/en/latest/web3.eth.html#web3.eth.Eth.get_block
 
 # Setup
-alchemy_url = "https://eth-mainnet.g.alchemy.com/v2/__API_KEY_HERE__"
+
+load_dotenv()  # take environment variables from .env.
+
+API_KEY = os.getenv('ALCHEMY_API_KEY')
+
+alchemy_url = f"https://eth-mainnet.g.alchemy.com/v2/{API_KEY}"
+
 w3 = Web3(Web3.HTTPProvider(alchemy_url))
 
 # Print if web3 is successfully connected
