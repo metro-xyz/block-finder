@@ -4,7 +4,7 @@ from web3 import Web3
 # https://web3py.readthedocs.io/en/latest/web3.eth.html#web3.eth.Eth.get_block
 
 # Setup
-alchemy_url = "https://eth-mainnet.g.alchemy.com/v2/_ICbZbsYrjcgOkdcbjxmA2G1sIyNd1yK"
+alchemy_url = "https://eth-mainnet.g.alchemy.com/v2/__API_KEY_HERE__"
 w3 = Web3(Web3.HTTPProvider(alchemy_url))
 
 # Print if web3 is successfully connected
